@@ -1,0 +1,13 @@
+{
+	"entryPoints": [
+		"src/lib/manager/expressions.ts",
+		"src/lib/model",
+		"src/lib/operand",
+		"src/lib/parser"
+	],
+	"out": "doc/source",
+	"excludePrivate": true,
+	"excludeProtected": true,
+	"name": "Expressions",
+	"readme": "none"
+}
