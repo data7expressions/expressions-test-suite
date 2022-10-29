@@ -17,7 +17,7 @@ export class ConversionBuildTest implements IBuildTest {
 				tests: [
 					'toString(month(customer.birthday))',
 					'toNumber("3.141516")',
-					'dateToString(datetime(customer.birthday))',
+					'dateToString(dateTime(customer.birthday))',
 					'keys(customer)',
 					'values(customer)',
 					'entries(customer)',

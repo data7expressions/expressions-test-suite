@@ -21,7 +21,7 @@ export class ComparisonBuildTest implements IBuildTest {
 				device: 'phone',
 				date: '2022-08-22',
 				time: '22:14:30',
-				datetime: '1997-07-08T22:14:30.000Z'
+				dateTime: '1997-07-08T22:14:30.000Z'
 			},
 			cases: [{
 				name: 'lab',
@@ -66,7 +66,7 @@ export class ComparisonBuildTest implements IBuildTest {
 					'isString(b)',
 					'isString(d)',
 					'isDate(date)',
-					'isDateTime(datetime)',
+					'isDateTime(dateTime)',
 					'isDateTime(time)',
 					'isTime(time)',
 					'isObject(c)',
@@ -81,7 +81,7 @@ export class ComparisonBuildTest implements IBuildTest {
 					'isIntegerFormat(pi)',
 					'isIntegerFormat(b)',
 					'isDateFormat(date)',
-					'isDateTimeFormat(datetime)',
+					'isDateTimeFormat(dateTime)',
 					'isDateTimeFormat(time)',
 					'isTimeFormat(time)'
 				]

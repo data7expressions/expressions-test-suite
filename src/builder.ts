@@ -22,7 +22,7 @@ export class TestBuilder {
 			new ComparisonBuildTest(),
 			new ConstantsBuildTest(),
 			new ConversionBuildTest(),
-			// new DateTimeBuildTest(),
+			new DateTimeBuildTest(),
 			new FlowsBuildTest(),
 			new GroupsBuildTest(),
 			new LogicalBuildTest(),

@@ -1,12 +1,12 @@
 {
   "name": "quick",
   "context": {
-    "name": "Spain",
+    "country": "Spain",
     "region": "Europe",
     "phoneCode": "34",
     "timezones": [
       {
-        "name": "Madrid",
+        "city": "Madrid",
         "offset": 1,
         "pos": {
           "lat": 40.4165,
@@ -14,7 +14,7 @@
         }
       },
       {
-        "name": "Ceuta",
+        "city": "Ceuta",
         "offset": 1,
         "pos": {
           "lat": 35.8883,
@@ -22,7 +22,7 @@
         }
       },
       {
-        "name": "Canary",
+        "city": "Canary",
         "offset": 0,
         "pos": {
           "lat": 28.1248,
@@ -44,14 +44,14 @@
           "result": false
         },
         {
-          "test": "`${name} belongs to ${region}`",
+          "test": "`${country} belongs to ${region}`",
           "result": "Spain belongs to Europe"
         },
         {
-          "test": "timezones.filter(p => substring(p.name,0,1)==\"C\")",
+          "test": "timezones.filter(p => substring(p.city,0,1)==\"C\")",
           "result": [
             {
-              "name": "Ceuta",
+              "city": "Ceuta",
               "offset": 1,
               "pos": {
                 "lat": 35.89,
@@ -59,7 +59,7 @@
               }
             },
             {
-              "name": "Canary",
+              "city": "Canary",
               "offset": 0,
               "pos": {
                 "lat": 28.12,
@@ -69,14 +69,14 @@
           ]
         },
         {
-          "test": "timezones.filter(p => p.offset == 1).sort(p => p.pos.lat).name",
+          "test": "timezones.filter(p => p.offset == 1).sort(p => p.pos.lat).city",
           "result": [
             "Ceuta",
             "Madrid"
           ]
         },
         {
-          "test": "stringify(timezones.first(p => p.name == \"Madrid\").pos)",
+          "test": "stringify(timezones.first(p => p.city == \"Madrid\").pos)",
           "result": "{\"lat\":40.4165,\"log\":-3.70256}"
         },
         {
@@ -86,7 +86,7 @@
           ]
         },
         {
-          "test": "sort(timezones.name)",
+          "test": "sort(timezones.city)",
           "result": [
             "Canary",
             "Ceuta",
@@ -94,19 +94,19 @@
           ]
         },
         {
-          "test": "timezones[0].name",
+          "test": "timezones[0].city",
           "result": "Madrid"
         },
         {
-          "test": "round(timezones.first(p=> p.name ==\"Madrid\").pos.lat - timezones.first(p=> p.name ==\"Ceuta\").pos.lat,2)",
+          "test": "round(timezones.first(p=> p.city ==\"Madrid\").pos.lat - timezones.first(p=> p.city ==\"Ceuta\").pos.lat,2)",
           "result": 4.53
         },
         {
           "test": "timezones.each(p => p.pos={lat:round(p.pos.lat,2),log:round(p.pos.log,2)}).map(p=> stringify(p))",
           "result": [
-            "{\"name\":\"Madrid\",\"offset\":1,\"pos\":{\"lat\":40.42,\"log\":-3.7}}",
-            "{\"name\":\"Ceuta\",\"offset\":1,\"pos\":{\"lat\":35.89,\"log\":-5.32}}",
-            "{\"name\":\"Canary\",\"offset\":0,\"pos\":{\"lat\":28.12,\"log\":-15.43}}"
+            "{\"city\":\"Madrid\",\"offset\":1,\"pos\":{\"lat\":40.42,\"log\":-3.7}}",
+            "{\"city\":\"Ceuta\",\"offset\":1,\"pos\":{\"lat\":35.89,\"log\":-5.32}}",
+            "{\"city\":\"Canary\",\"offset\":0,\"pos\":{\"lat\":28.12,\"log\":-15.43}}"
           ]
         }
       ]

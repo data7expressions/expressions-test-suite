@@ -166,6 +166,31 @@
           ]
         },
         {
+          "test": "orders.details.map(p=>{article:p.article,count:count(1),total:sum(p.qty * p.unitPrice)})",
+          "result": [
+            {
+              "article": "Pear",
+              "count": 2,
+              "total": 5.34
+            },
+            {
+              "article": "Banana",
+              "count": 2,
+              "total": 5.97
+            },
+            {
+              "article": "White grape",
+              "count": 1,
+              "total": 2.03
+            },
+            {
+              "article": "Apple",
+              "count": 1,
+              "total": 2.15
+            }
+          ]
+        },
+        {
           "test": "{total:orders[0].details.sum(p=>p.qty * p.unitPrice)}",
           "result": {
             "total": 7.58

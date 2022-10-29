@@ -22,7 +22,7 @@
 	},
 	"dependencies": {
 		"h3lp": "^0.2.11",
-		"js-expressions": "^1.4.1"
+		"js-expressions": "^1.4.2"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.15.4",
