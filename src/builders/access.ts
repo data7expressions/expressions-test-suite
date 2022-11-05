@@ -1,7 +1,6 @@
 /* eslint-disable no-template-curly-in-string */
 import { expressions  as exp } from 'js-expressions'
-import { TestSuiteRequest } from 'h3lp'
-import { IBuildTest } from '../model'
+import { TestSuiteRequest, IBuildTest } from 'h3lp'
 
 export class AccessBuildTest implements IBuildTest {
 
