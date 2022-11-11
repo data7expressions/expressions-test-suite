@@ -26,7 +26,7 @@
         },
         {
           "test": "d=`value of a is: ${a}`",
-          "result": "value of a is: 8"
+          "result": "value of a is: "
         }
       ]
     }

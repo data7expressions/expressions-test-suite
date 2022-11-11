@@ -7,15 +7,15 @@ export class StringBuildTest implements IBuildTest {
 		return {
 			name: 'string',
 			context: { firstName: 'Juan'
-							, lastName: 'Lopez'
-							, email: 'jlopez@email.com'
-							, age: 44
-							, food: 'pizza'
-							, film: 'Estación central'
-							, a: null
-							, b: ''
-							, c: ' '
-							},
+					, lastName: 'Lopez'
+					, email: 'jlopez@email.com'
+					, age: 44
+					, food: 'pizza'
+					, film: 'Estación central'
+					, a: null
+					, b: ''
+					, c: ' '
+					},
 			cases: [{
 				name: 'lab',
 				func: (expression: any, context: any) => exp.eval(expression, context),

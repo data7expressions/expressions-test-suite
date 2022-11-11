@@ -85,7 +85,7 @@
         },
         {
           "test": "`${firstName} is ${age} years old and likes ${food}`",
-          "result": "Juan is 44 years old and likes pizza"
+          "result": "Juan is  years old and likes pizza"
         },
         {
           "test": "test(\"5\",\"[a-zA-Z0-9_.]+$\")",
