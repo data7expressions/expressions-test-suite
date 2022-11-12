@@ -1,6 +1,6 @@
 {
 	"name": "expressions-test-suite",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "test suite for expressions",
 	"author": "Flavio Lionel Rita <flaviolrita@hotmail.com>",
 	"license": "Apache-2.0 License",
@@ -21,8 +21,8 @@
 		"release": "grunt release"
 	},
 	"dependencies": {
-		"h3lp": "^1.0.2",
-		"js-expressions": "1.5.1"
+		"h3lp": "1.0.3",
+		"js-expressions": "1.5.2"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.15.4",
