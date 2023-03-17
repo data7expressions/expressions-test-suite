@@ -1,9 +1,8 @@
-import { expressions  as exp } from 'js-expressions'
+import { expressions as exp } from '3xpr'
 import { TestSuiteRequest, IBuildTest } from 'h3lp'
 
 export class ArrowBuildTest implements IBuildTest {
-
-	public build(): TestSuiteRequest {
+	public build (): TestSuiteRequest {
 		return {
 			name: 'arrow',
 			context: {

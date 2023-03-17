@@ -1,10 +1,9 @@
 /* eslint-disable no-template-curly-in-string */
-import { expressions  as exp } from 'js-expressions'
+import { expressions as exp } from '3xpr'
 import { TestSuiteRequest, IBuildTest } from 'h3lp'
 
 export class AccessBuildTest implements IBuildTest {
-
-	public build(): TestSuiteRequest {
+	public build (): TestSuiteRequest {
 		return {
 			name: 'access',
 			context: {
@@ -60,6 +59,6 @@ export class AccessBuildTest implements IBuildTest {
 				]
 			}
 			]
-		}	
+		}
 	}
 }

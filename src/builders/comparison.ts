@@ -1,9 +1,8 @@
-import { expressions  as exp } from 'js-expressions'
+import { expressions as exp } from '3xpr'
 import { TestSuiteRequest, IBuildTest } from 'h3lp'
 
 export class ComparisonBuildTest implements IBuildTest {
-
-	public build(): TestSuiteRequest {
+	public build (): TestSuiteRequest {
 		return {
 			name: 'comparison',
 			context: {
@@ -46,10 +45,17 @@ export class ComparisonBuildTest implements IBuildTest {
 					// '2*(c.a==4?2:4)'
 					'includes(devices,"phone")',
 					'includes(devices,"other")',
-					'in(devices,"other")',
-					'devices.in("phone")',
-					'devices.in(device)',
-					'["garage", "house","office"].in(d)',
+					'contains(devices,"other")',
+					'devices.contains("phone")',
+					'devices.contains(device)',
+					'["garage", "house","office"].contains(d)',
+					'["garage", "house","office"].includes(d)',
+					'in(device,devices)',
+					'device.in(devices)',
+					'in(2,[1,3,4])',
+					'in(2,[1,2,3,4])',
+					'd.in(["garage", "house","office"])',
+					'd.in("garage", "house","office")',
 					'between(12,10,20)',
 					'between(2,10,20)',
 					'between(pi,1,5)',

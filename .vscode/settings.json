@@ -1,10 +1,18 @@
 {
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
     "cSpell.words": [
-        "Flavio",
-        "imei",
-        "lpad",
-        "ltrim",
-        "rpad",
-        "rtrim"
+      "ecma",
+      "Flavio",
+      "imei",
+      "linebreak",
+      "lpad",
+      "ltrim",
+      "rpad",
+      "rtrim"
     ]
 }

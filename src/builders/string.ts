@@ -1,21 +1,22 @@
-import { expressions  as exp } from 'js-expressions'
+/* eslint-disable no-template-curly-in-string */
+import { expressions as exp } from '3xpr'
 import { TestSuiteRequest, IBuildTest } from 'h3lp'
 
 export class StringBuildTest implements IBuildTest {
-
-	public build(): TestSuiteRequest {
+	public build (): TestSuiteRequest {
 		return {
 			name: 'string',
-			context: { firstName: 'Juan'
-					, lastName: 'Lopez'
-					, email: 'jlopez@email.com'
-					, age: 44
-					, food: 'pizza'
-					, film: 'Estación central'
-					, a: null
-					, b: ''
-					, c: ' '
-					},
+			context: {
+				firstName: 'Juan',
+				lastName: 'Lopez',
+				email: 'jlopez@email.com',
+				age: 44,
+				food: 'pizza',
+				film: 'Estación central',
+				a: null,
+				b: '',
+				c: ' '
+			},
 			cases: [{
 				name: 'lab',
 				func: (expression: any, context: any) => exp.eval(expression, context),
