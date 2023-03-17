@@ -80,6 +80,26 @@
           "result": true
         },
         {
+          "test": "startWith(film,\"Est\")",
+          "result": true
+        },
+        {
+          "test": "startWith(film,\"Est\",0)",
+          "result": true
+        },
+        {
+          "test": "startWith(film,\"st\",1)",
+          "result": true
+        },
+        {
+          "test": "film.startWith(\"Est\")",
+          "result": true
+        },
+        {
+          "test": "film.startWith(\"N\")",
+          "result": false
+        },
+        {
           "test": "strCount(film,\"a\")",
           "result": 2
         },
