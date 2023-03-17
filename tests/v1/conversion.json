@@ -73,7 +73,9 @@
           "test": "parse(data).b",
           "result": 1
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

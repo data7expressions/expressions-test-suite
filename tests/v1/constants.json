@@ -25,7 +25,9 @@
           "test": "a = nvl(null,false)",
           "result": false
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

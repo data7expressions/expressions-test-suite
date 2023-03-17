@@ -69,7 +69,9 @@
           "test": "a = cities.push(salta).name",
           "result": "any"
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

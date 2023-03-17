@@ -100,19 +100,47 @@
           "result": false
         },
         {
-          "test": "in(devices,\"other\")",
+          "test": "contains(devices,\"other\")",
           "result": false
         },
         {
-          "test": "devices.in(\"phone\")",
+          "test": "devices.contains(\"phone\")",
           "result": true
         },
         {
-          "test": "devices.in(device)",
+          "test": "devices.contains(device)",
           "result": true
         },
         {
-          "test": "[\"garage\", \"house\",\"office\"].in(d)",
+          "test": "[\"garage\", \"house\",\"office\"].contains(d)",
+          "result": true
+        },
+        {
+          "test": "[\"garage\", \"house\",\"office\"].includes(d)",
+          "result": true
+        },
+        {
+          "test": "in(device,devices)",
+          "result": true
+        },
+        {
+          "test": "device.in(devices)",
+          "result": true
+        },
+        {
+          "test": "in(2,[1,3,4])",
+          "result": false
+        },
+        {
+          "test": "in(2,[1,2,3,4])",
+          "result": true
+        },
+        {
+          "test": "d.in([\"garage\", \"house\",\"office\"])",
+          "result": true
+        },
+        {
+          "test": "d.in(\"garage\", \"house\",\"office\")",
           "result": true
         },
         {
@@ -247,7 +275,9 @@
           "test": "isTimeFormat(time)",
           "result": false
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

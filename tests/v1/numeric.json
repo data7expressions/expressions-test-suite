@@ -100,7 +100,9 @@
           "test": "trunc(7.984938,2)",
           "result": 7
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

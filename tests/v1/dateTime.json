@@ -117,7 +117,9 @@
           "test": "millisecondToDate(2000)",
           "result": "1970-01-01T00:00:02.000Z"
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

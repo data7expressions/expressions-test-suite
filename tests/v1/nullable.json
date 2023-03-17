@@ -30,7 +30,9 @@
           "test": "nvl2(d,\"is not null\",\"is null\")",
           "result": "is null"
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

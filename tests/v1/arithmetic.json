@@ -52,7 +52,9 @@
           "test": "2**b+a",
           "result": "41"
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

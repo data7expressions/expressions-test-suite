@@ -30,7 +30,9 @@
           "test": "!(a==\"1\" || b>2)",
           "result": false
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

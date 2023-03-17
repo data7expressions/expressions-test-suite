@@ -61,7 +61,9 @@
           "test": " while (p=devices.pop()) {\n\t\t\t\t\t\tmac=p.mac;\n\t\t\t\t\t}\n\t\t\t\t\tmac;\n\t\t\t\t\t",
           "result": "10:3d:1c:9b:7e:db"
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }

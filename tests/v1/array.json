@@ -180,7 +180,9 @@
           "test": "musicians[musicians.length()-1]",
           "result": "Luiz Alberto Spinetta"
         }
-      ]
+      ],
+      "errors": 0
     }
-  ]
+  ],
+  "errors": 0
 }
