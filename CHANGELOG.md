@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [1.0.4](https://github.com/data7expressions/expressions-test-suite/compare/v1.0.3...v1.0.4) (2024-01-26)
+
 ### 1.0.3 (2024-01-26)
 
 
