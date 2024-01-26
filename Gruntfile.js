@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 			lint: { cmd: 'npx eslint src' },
 			test: { cmd: 'npx jest --config jest-unit-config.json' },
 			tsc: { cmd: 'npx tsc' },
-			doc: { cmd: 'npx typedoc --plugin typedoc-plugin-markdown --out doc/source src/lib/index.ts' },
+			doc: { cmd: 'npx typedoc --plugin typedoc-plugin-markdown --out doc/source src/index.ts' },
 			getOriginalBranch: {
 				cmd: 'git branch | sed -n -e \'s/^\\* \\(.*\\)/\\1/p\'',
 				callback: function (error, stdout, stderr) {
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
 			dist: ['dist']
 		},
 		copy: {
-			lib: { expand: true, cwd: 'build/lib', src: '**', dest: 'dist/' },
+			lib: { expand: true, cwd: 'build', src: '**', dest: 'dist/' },
 			readme: { expand: true, src: './README.md', dest: 'dist/' },
 			changeLog: { expand: true, src: './CHANGELOG.md', dest: 'dist/' },
 			license: { expand: true, src: './LICENSE', dest: 'dist/' },
