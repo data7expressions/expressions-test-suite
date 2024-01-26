@@ -1,18 +1,23 @@
 {
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
 	"editor.tabSize": 2,
 	"editor.insertSpaces": false,
     "cSpell.words": [
+      "branchlint",
+      "branchlintrc",
+      "commitlint",
       "ecma",
       "Flavio",
+      "Gitflow",
       "imei",
       "linebreak",
       "lpad",
       "ltrim",
       "rpad",
-      "rtrim"
+      "rtrim",
+      "stackoverflow"
     ]
 }
