@@ -27,7 +27,7 @@
 	},
 	"dependencies": {
 		"h3lp": "^1.5.8",
-		"3xpr": "^1.15.9"
+		"3xpr": "^1.15.10"
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.23.10",
